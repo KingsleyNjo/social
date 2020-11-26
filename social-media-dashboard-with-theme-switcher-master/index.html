@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    
+</head>
+<body>
+  <section class="Dashboard-section"> 
+    <div class="first-container">
+
+      <div class="dashboard-row">
+        <div class="social-content">
+          <h1 id="social-head" class="social-head"> Social Media Dashboard</h1>
+          <p>Total Followers: 23,004</p>
+        </div>
+        <div class="slider-content">
+          <span>Dark Mode</span>
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round" onclick="slideChange()"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="review-row">
+
+        <div class="review-content blue-colored" onmouseover="changeback(this)" onmouseout="normback(this)">
+          <div class="social-details">
+            <div class="social-names row-2">
+              <img src="images/icon-facebook.svg" alt="social-img">
+              <p>@nathanf</p>
+            </div>
+            <h2>1987</h2>
+            <p class="follow">Followers</p>
+            <div class="social-rate row-2">
+              <img src="images/icon-up.svg" alt="arrow-icon">
+              <p class="high-rate"> 12 Today</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-content blue-colored spaced" onmouseover="changeback(this)" onmouseout="normback(this)">
+          <div class="social-details">
+            <div class="social-names row-2">
+              <img src="images/icon-twitter.svg" alt="social-img">
+              <p>@nathanf</p>
+            </div>
+            <h2>1044</h2>
+            <p class="follow">Followers</p>
+            <div class="social-rate row-2">
+              <img src="images/icon-up.svg" alt="arrow-icon">
+              <p class="high-rate">99 Today</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-content insta-colored spaced" onmouseover="changeback(this)" onmouseout="normback(this)">
+          <div class="social-details">
+            <div class="social-names row-2">
+              <img src="images/icon-instagram.svg" alt="social-img">
+              <p>@realnathanf</p>
+            </div>
+            <h2>11k</h2>
+            <p class="follow">Followers</p>
+            <div class="social-rate row-2">
+              <img src="images/icon-up.svg" alt="arrow-icon">
+              <p class="high-rate">1099 Today</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="review-content yt-colored spaced" onmouseover="changeback(this)" onmouseout="normback(this)">
+          <div class="social-details">
+            <div class="social-names row-2">
+              <img src="images/icon-youtube.svg" alt="social-img">
+              <p>Nathan F.</p>
+            </div>
+            <h2>8239</h2>
+            <p class="follow">Subscribers</p>
+            <div class="social-rate row-2">
+              <img src="images/icon-down.svg" alt="arrow-icon">
+              <p class="down-rate">144 Today</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="overview-section">
+    <div class="second-container">
+      <h2 class="head-over">Overview - Today</h2>
+
+      <div class="dashboard-content row">
+
+        <div class="overview-content" onmouseover="changeback(this)" onmouseout="normback(this)">
+          <div class="details-over">
+            <p>Page Views</p>
+            <h2>87</h2>
+          </div>
+          <div class="details-over">
+            <img src="images/icon-facebook.svg" alt="social-img" class="social-img">
+            <div class="social-rates row-2">
+              <img src="images/icon-up.svg" alt="arrow-icon">
+              <p class="high-rate">3%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview-content spaced" onmouseover="changeback(this)" onmouseout="normback(this)">
+          <div class="details-over">
+            <p >Likes</p>
+            <h2>52</h2>
+          </div>
+          <div class="details-over">
+            <img src="images/icon-facebook.svg" alt="social-img" class="social-img">
+            <div class="social-rates row-2">
+              <img src="images/icon-down.svg" alt="arrow-icon">
+              <p class="down-rate">2%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview-content spaced" onmouseover="changeback(this)" onmouseout="normback(this)">
+          <div class="details-over">
+            <p >Likes</p>
+            <h2>5462</h2>
+          </div>
+          <div class="details-over">
+            <img src="images/icon-instagram.svg" alt="social-img" class="social-img">
+            <div class="social-rates row-2">
+              <img src="images/icon-up.svg" alt="arrow-icon">
+              <p class="high-rate">2257%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview-content spaced" onmouseover="changeback(this)" onmouseout="normback(this)" >
+          <div class="details-over">
+            <p >Profile Views</p>
+            <h2>52k</h2>
+          </div>
+          <div class="details-over">
+            <img src="images/icon-instagram.svg" alt="social-img" class="social-img">
+            <div class="social-rates row-2">
+              <img src="images/icon-up.svg" alt="arrow-icon">
+              <p class="high-rate">1375%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview-content spaced" onmouseover="changeback(this)" onmouseout="normback(this)">
+          <div class="details-over">
+            <p >Retweets</p>
+            <h2>117</h2>
+          </div>
+          <div class="details-over">
+            <img src="images/icon-twitter.svg" alt="social-img" class="social-img">
+            <div class="social-rates row-2">
+              <img src="images/icon-up.svg" alt="arrow-icon">
+              <p class="high-rate">303%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview-content rrow spaced" onmouseover="changeback(this)" onmouseout="normback(this)">
+          <div class="details-over">
+            <p >Likes</p>
+            <h2>507</h2>
+          </div>
+          <div class="details-over">
+            <img src="images/icon-twitter.svg" alt="social-img" class="social-img">
+            <div class="social-rates row-2">
+              <img src="images/icon-up.svg" alt="arrow-icon">
+              <p class="high-rate">553%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview-content rrow spaced" onmouseover="changeback(this)" onmouseout="normback(this)" >
+          <div class="details-over">
+            <p >Likes</p>
+            <h2>107</h2>
+          </div>
+          <div class="details-over">
+            <img src="images/icon-youtube.svg" alt="social-img" class="social-img">
+            <div class="social-rates row-2">
+              <img src="images/icon-down.svg" alt="arrow-icon">
+              <p class="down-rate">19%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview-content rrow spaced" onmouseover="changeback(this)" onmouseout="normback(this)">
+          <div class="details-over">
+            <p >Total Views</p>
+            <h2>1407</h2>
+          </div>
+          <div class="details-over">
+            <img src="images/icon-youtube.svg" alt="social-img" class="social-img">
+            <div class="social-rates row-2">
+              <img src="images/icon-down.svg" alt="arrow-icon">
+              <p class="down-rate">12%</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+    
+  </section>
+  
+  <script src="main.js"></script>
+
+</body>
+</html>
